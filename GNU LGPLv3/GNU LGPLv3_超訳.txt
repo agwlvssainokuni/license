@@ -1,0 +1,395 @@
+		   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+
+ 本ライセンス文書は、そのまんま扱う限り、誰でも複製および頒布してOK。
+ ただし、改変するのはNG。
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  この版のGNU LGPL (Lesser General Public License) は、GNU GPL
+(General Public License) の第3版の条項および条件と組合わせる形態をとっ
+ており、下記に示す「追加許諾条項 (additional permissions)」によって補
+足されるものである。
+
+  [超訳注] "additional permission"はGNU GPLv3の「7. Additional Terms.」
+  で定義されている。即ち、GNU LGPLv3は、GNU GPLv3に対してセクション7の
+  意味で条件を追加したものとして定義されていると言う事である。
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+
+  0. 追加定義
+  0. Additional Definitions. 
+
+  ここで使用する「本ライセンス (this License)」という言葉は、GNU LGPL
+(Lesser General Public License) の第3版を意味する。そして、「GNU GPL」
+という言葉を以って GNU GPL (General Public License) の第3版を表す。
+
+  As used herein, "this License" refers to version 3 of the GNU Lesser
+General Public License, and the "GNU GPL" refers to version 3 of the GNU
+General Public License.
+
+  「ライブラリ (the Library)」は、本ライセンス (this License) によって
+規定される対象物件 (covered work) を意味する。ライブラリ (the Library) 
+は「アプリケーション (Application)」あるいは「結合物件 (Combined Work)」
+とは異なるものであり、これらについては下記の通り定義される。
+
+  "The Library" refers to a covered work governed by this License,
+other than an Application or a Combined Work as defined below.
+
+  「アプリケーション (Application)」とは、ライブラリ (the Library) が
+提供するインタフェースを使用する (make use of) 物件のことである。ただ
+し、アプリケーションはライブラリ (the Library) に「基づく (based on)」
+物件ではないものとする。ライブラリ (the Library) によって定義されたク
+ラスのサブクラスを定義することは、当該ライブラリ (the Library) が提供
+するインタフェースを使用する形態 (mode) であると見なされる。
+
+  An "Application" is any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+Defining a subclass of a class defined by the Library is deemed a mode
+of using an interface provided by the Library.
+
+  「結合物件 (Combined Work)」とは、アプリケーション (Application) を
+ライブラリ (the Library) と結合 (combine) またはリンク (link) する事で
+形成 (produce) される物件のことである。ライブラリ (the Library) のうち、
+結合物件 (Combined Work) を作る時に結合あるいはリンクされた特定の版の
+ことを、「リンク版 (Linked Version)」と呼ぶ。
+
+  A "Combined Work" is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the "Linked
+Version".
+
+  結合物件 (Combined Work) の「最小限の対応するソース (Minimal
+Corresponding Source)」とは、当該結合物件 (Combined Work) の「対応する
+ソース (Corresponding Source)」に対して、下記のように定義する。
+  ・結合物件 (Combined Work) のを「部位」(portion) の集合体として分離
+    して考える (considered in isolation)。
+  ・当該アプリケーション (Application) に「基づく (based on)」部位に対
+    するソースコード (source code) は、前記「最小限の対応するソース 
+    (Minimal Corresponding Source)」から除外する。
+  ・リンク版 (Linked Version) に「基づかない ([based] not on)」部位に
+    対応するソースコード (source code) は、前記「最小限の対応するソー
+    ス (Minimal Corresponding Source)」から除外する。[ほぼ直訳]
+      ----超訳; ここから----
+      リンク版 (Linked Version) に「基づく (based on)」部位のソースコー
+      ド (source code) は、前記「最小限の対応するソース (Minimal
+      Corresponding Source)」に含まれる。
+      ----超訳; ここまで----
+
+  The "Minimal Corresponding Source" for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  結合物件 (Combined Work) の「対応するアプリケーションコード 
+(Corresponding Application Code)」とは、当該アプリケーション 
+(Application) のオブジェクトコード (obuject code) またはソースコード 
+(source code) またはその両方であり、下記のように定義する。
+  ・アプリケーション (Application) から結合物件 (Combined Work) を再形
+    成するのに必要とされる全てのデータおよび全てのユーティリティを含む。
+  ・当該結合物件 (Combined Work) のシステムライブラリ (System
+    Libraries) は含まない。
+
+  The "Corresponding Application Code" for a Combined Work means the
+object code and/or source code for the Application, including any data
+and utility programs needed for reproducing the Combined Work from the
+Application, but excluding the System Libraries of the Combined Work.
+
+
+  1. GNU GPLv3のセクション3に対する例外条項。
+  1. Exception to Section 3 of the GNU GPL.
+
+  「you」は、対象物件 (covered work) を本ライセンス (this License) の
+セクション3およびセクション4の下で convey できる。この時、GNU GPLv3の
+セクション3の義務は負わない。
+
+  [超訳注] GNU GPLv3のセクション3は「3. Protecting Users' Legal Rights
+  From Anti-Circumvention Law.」
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+
+  2. 改変版を convey すること。
+  2. Conveying Modified Versions.
+
+  「you」がライブラリ (the Library) の複製を改変 (modify) して、その改
+変の中に、アプリケーション (Application) によって提供される関数または
+データを参照する機能単位が含まれる (かつ、アプリケーション 
+(Application) もこの機能単位を使用する) 場合、「you」は改変版 
+(modified version) の複製を下記の条件の下で convey できる。
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version:
+
+   a) 本ライセンス (this License) のもとで convey する。ただし、「you」
+   は、下記が確実に実現するよう誠実に努力すること。
+     ・アプリケーション (Application) が当該関数またはデータを提供しな
+       い場合でも、
+         - 当該機能単位が機能すること。
+           かつ、
+         - 当該機能単位が、その用途の意義を維持している部分については、
+           全て実行すること。
+   あるいは、
+
+     [超訳注] ここは訳出が難しい。
+     "operates, and performs"は、間にカンマが入っているので、whatever 
+     以降を目的語として取るのは performs だけと考えるのが自然。
+     "its purpose"の its は「the facility」を指している。
+
+   a) under this License, provided that you make a good faith effort to
+   ensure that, in the event an Application does not supply the
+   function or data, the facility still operates, and performs
+   whatever part of its purpose remains meaningful, or
+
+   b) GNU GPL のもとで convey する。この場合、当該複製に対しては本ライ
+   センス (this License = GNU LGPL) の如何なる追加許諾条項 (additional
+   permissions) も適用しない。
+
+   b) under the GNU GPL, with none of the additional permissions of
+   this License applicable to that copy.
+
+
+  3. ライブラリヘッダファイルからの要素を結合するオブジェクトコード。
+  3. Object Code Incorporating Material from Library Header Files.
+
+  アプリケーション (Application) のオブジェクトコード (object code) 形
+式は、ライブラリ (the Library) を構成するヘッダファイルからの要素と結
+合され得る。「you」は、当該オブジェクトコードを「you」の選択した条件の
+下に convey する事ができる。ただし、結合された要素が、「数値パラメタ」
+「データ構造レイアウトおよびアクセサ」「マクロ・インライン関数・テンプ
+レートで小規模なもの (長さにして10行以下)」以外のものを含む場合、「you」
+は下記の両方を実施しなければならない。
+
+  The object code form of an Application may incorporate material from
+a header file that is part of the Library.  You may convey such object
+code under terms of your choice, provided that, if the incorporated
+material is not limited to numerical parameters, data structure
+layouts and accessors, or small macros, inline functions and templates
+(ten or fewer lines in length), you do both of the following:
+
+   a) 当該オブジェクトコードの複製の全てに、はっきりと分かるように下記
+   の通告を付与すること。
+     ・当該オブジェクトコードの中に本ライブラリ (the Library) が使われ
+       ていること。
+     ・ライブラリの使用は本ライセンス (this License) によって保護され
+       ていること。
+
+   a) Give prominent notice with each copy of the object code that the
+   Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) 当該オブジェクトコードに、GNU GPLと本使用許諾文書の複製を添付す
+   ること。
+
+   b) Accompany the object code with a copy of the GNU GPL and this license
+   document.
+
+
+  4. 結合物件。
+  4. Combined Works.
+
+  「you」は、結合物件 (Combined Work) を「you」の選択した条件の下に 
+convey する事ができる。ただし、その条件は、結合物件 (Combined Work) に
+含まれているライブラリ (the Library) 部分の改変を実質的に制限しないも
+のでなければならない、かつ、当該改変のデバッグのためのリバースエンジニ
+アリングについても実質的に制限しないものでなければならない。さらに、下
+記の全てを実施しなければならない。
+
+  You may convey a Combined Work under terms of your choice that,
+taken together, effectively do not restrict modification of the
+portions of the Library contained in the Combined Work and reverse
+engineering for debugging such modifications, if you also do each of
+the following:
+
+   a) 当該結合物件 (Combined Work) の複製の全てに、はっきりと分かるよ
+   うに下記の通告を付与すること。
+     ・当該結合物件 (Combined Work) の中に本ライブラリ (the Library) 
+       が使われていること。
+     ・ライブラリの使用は本ライセンス (this License) によって保護され
+       ていること。
+
+   a) Give prominent notice with each copy of the Combined Work that
+   the Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) 当該結合物件 (Combined Work) に、GNU GPLと本使用許諾文書の複製を
+   添付すること。
+
+   [超訳注] a)b)は実質的に3.のa)b)と同じ。あるのは "object code" (3.) 
+   と "Combined Work" (4.) の違いのみ。
+
+   b) Accompany the Combined Work with a copy of the GNU GPL and this license
+   document.
+
+   c) 実行中に著作権表記を表示するような結合物件 (Combined Work) につ
+   いては、その著作権表記の中にライブラリ (the Library) の著作権表記も
+   含めること。また、その中でユーザに GNU GPL および本使用許諾文書の複
+   製の在処も示すこと。
+
+   c) For a Combined Work that displays copyright notices during
+   execution, include the copyright notice for the Library among
+   these notices, as well as a reference directing the user to the
+   copies of the GNU GPL and this license document.
+
+   d) 下記のどちらか一つを実施すること。
+
+   d) Do one of the following:
+
+       0) 本ライセンス (this License) の条項の下で、「最小限の対応する
+       ソース (Minimal Corresponding Source)」を convey すること。
+       かつ、
+       許可し得る条項の下で (under terms that permit)、「対応するアプ
+       リケーションコード (Corresponding Application Code)」を convey 
+       すること。この時、「対応するアプリケーションコード 
+       (Corresponding Application Code)」は、ユーザがアプリケーション 
+       (Application) とリンク版 (Linked Version) の改変版を再結合ある
+       いは再リンクして結合物件 (Combined Work) の改変版を形成するのに
+       適した形式でなければならない。また、「対応するアプリケーション
+       コード (Corresponding Application Code)」の convey は、GNU GPL
+       のセクション6で規定された「対応するソース (Corresponding
+       Source)」を convey する方法に則ること。
+
+       0) Convey the Minimal Corresponding Source under the terms of this
+       License, and the Corresponding Application Code in a form
+       suitable for, and under terms that permit, the user to
+       recombine or relink the Application with a modified version of
+       the Linked Version to produce a modified Combined Work, in the
+       manner specified by section 6 of the GNU GPL for conveying
+       Corresponding Source.
+
+       1) ライブラリ (the Library) とのリンクに共有ライブラリ機構を使
+       用すること。これに合った機構としては、下記を満たすものであるこ
+       と。
+         (a) 実行時にライブラリ (the Library) の複製が既にユーザのコン
+         ピュータシステムに存在したらそれを使う。
+         かつ、
+         (b) ライブラリ (the Library) の改変版に対して、それがリンク版 
+         (Linked Version) と互換性のあるインタフェースであれば適切に動
+         作する。
+
+       1) Use a suitable shared library mechanism for linking with the
+       Library.  A suitable mechanism is one that (a) uses at run time
+       a copy of the Library already present on the user's computer
+       system, and (b) will operate properly with a modified version
+       of the Library that is interface-compatible with the Linked
+       Version. 
+
+   e) インストール情報 (Installation Information) を提供すること。ただ
+   し、これは GNU GPL のセクション6の下で当該情報の提供が要求される場
+   合に限られる。また、インストール情報を提供する場合でも、アプリケー
+   ション (Application) とリンク版 (Linked Version) の改変版を再結合あ
+   るいは再リンクして形成された結合物件 (Combined Work) の改変版をイン
+   ストールして実行するのに必要な範囲の情報が提供されるだけで良い。
+    (前記4dにおいて「0」を選択する場合、インストール情報 (Installation
+     Information) は「最小限の対応するソース (Minimal Corresponding
+     Source)」と「対応するアプリケーションコード (Corresponding
+     Application Code)」を添付しなければならない。
+     前記4d において「1」を選択する場合、GNU GPLのセクション6で規定さ
+     れた「対応するソース (Corresponding Source)」を convey する方法に
+     則ってインストール情報 (Installation Information) を提供しなけれ
+     ばならない。)
+
+   e) Provide Installation Information, but only if you would otherwise
+   be required to provide such information under section 6 of the
+   GNU GPL, and only to the extent that such information is
+   necessary to install and execute a modified version of the
+   Combined Work produced by recombining or relinking the
+   Application with a modified version of the Linked Version. (If
+   you use option 4d0, the Installation Information must accompany
+   the Minimal Corresponding Source and Corresponding Application
+   Code. If you use option 4d1, you must provide the Installation
+   Information in the manner specified by section 6 of the GNU GPL
+   for conveying Corresponding Source.)
+
+
+  5. 結合したライブラリ。
+  5. Combined Libraries.
+
+  「you」は、ライブラリ (the Library) に基づく (based on) 物件であると
+ころのライブラリ機能単位を、アプリケーション (Application) でも本ライ
+センス (this License) の対象でもない他のライブラリ機能単位と共に、単一
+のライブラリの中に並存させる事ができる。また、結合したライブラリを
+「you」の選択した条件の下で convey する事ができる。ただし、これらの行
+為をする場合、下記の両方を実施しなければならない。
+
+  You may place library facilities that are a work based on the
+Library side by side in a single library together with other library
+facilities that are not Applications and are not covered by this
+License, and convey such a combined library under terms of your
+choice, if you do both of the following:
+
+   a) 結合したライブラリに、下記を添付すること。
+     ・ライブラリ (the Library) に基づいた (based on) 物件 (結合したラ
+       イブラリに含まれるのと同じもの) を、他のライブラリ機能単位と結
+       合しない形態で添付する。
+       尚、結合しない形態のものは、本ライセンス (this License) の条項
+       の下に convey されるものである。
+
+   a) Accompany the combined library with a copy of the same work based
+   on the Library, uncombined with any other library facilities,
+   conveyed under the terms of this License.
+
+   b) 結合したライブラリに対して、はっきりと分かるように下記の通告を付
+   与すること。
+     ・構成要素として本ライブラリ (the Library) に基づいた (based on) 
+       物件が含まれていること。
+     ・前記物件について、他のライブラリ機能単位と結合しない形態のもの
+       がa) によって添付されるが、それがどこにあるかを説明すること。
+
+   b) Give prominent notice with the combined library that part of it
+   is a work based on the Library, and explaining where to find the
+   accompanying uncombined form of the same work.
+
+
+  6. GNU LGPLの改定版について。
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  FSFは、時々、GNU LGPLの改定版あるいは新版を発行できる。新版は、その
+理念 (spirit) において前の版と変わることは無いが、新しい問題や新しい懸
+念事項を解決するために細かい所では変わり得る。
+
+  The Free Software Foundation may publish revised and/or new versions
+of the GNU Lesser General Public License from time to time. Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.
+
+  各版は、明確に区別できるよう版番号が割り振られている。「you」が受取っ
+たライブラリ (the Library) が、特定の版番号と「あるいは、それ以降の任
+意の版 (or any later version)」という記述を以って GNU LGPL が適用され
+る旨を明示しているのであれば、「you」は実際に適用する GNU GPL の版をそ
+の版もしくはFSFから発表されるそれ以降の版の GNU LGPL の中から自分で選
+択する事ができる。「you」が受取ったライブラリ (the Library) が GNU
+LGPL の版番号を明示していないならば、「you」は実際に適用する GNU LGPL 
+の版をこれまでにFSFから発表された任意の版から選択する事ができる。
+
+  Each version is given a distinguishing version number. If the
+Library as you received it specifies that a certain numbered version
+of the GNU Lesser General Public License "or any later version"
+applies to it, you have the option of following the terms and
+conditions either of that published version or of any later version
+published by the Free Software Foundation. If the Library as you
+received it does not specify a version number of the GNU Lesser
+General Public License, you may choose any version of the GNU Lesser
+General Public License ever published by the Free Software Foundation.
+
+  「you」の受取ったライブラリ (the Library) に適用する GNU LGPL の版が、
+代理人によって決定できる旨が明記されている場合、当該代理人がどの版を受
+諾したかを宣言する公式声明に基づいて、「you」が当該ライブラリ (the
+Library) に対して当該版の GNU LGPL を選択する事で「you」に対する使用許
+諾が承認される。
+
+  If the Library as you received it specifies that a proxy can decide
+whether future versions of the GNU Lesser General Public License shall
+apply, that proxy's public statement of acceptance of any version is
+permanent authorization for you to choose that version for the
+Library.

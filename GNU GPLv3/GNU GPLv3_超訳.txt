@@ -1,0 +1,1584 @@
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+
+ 本ライセンス文書は、そのまんま扱う限り、誰でも複製および頒布してOK。
+ ただし、改変するのはNG。
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            前文
+                            Preamble
+
+  GNU GPLというのは、「自由」である事を基本とする、「コピーレフト」ラ
+イセンスである。その対象は、ソフトウェアあるいはその他の物件を想定する。
+
+  The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+  多くの場合、ソフトウェアあるいはその他の物件のライセンス (使用許諾) 
+というのは、ユーザ (you) の自由を奪うよう規定されている。具体的には、
+ユーザ (you) は当該物件を他の人と共有したり改変したりする自由がない 
+(ライセンスによって禁止されている)。これと対照的に、GNU GPL (the GNU
+General Public License) はユーザ (you) に自由を保証するものである。即
+ち、ユーザ (you) は、いかなるバージョンであっても対象プログラムを他の
+人と共有したり改変したりすることができる。また、全てのユーザに対して当
+該ソフトウェアが将来にわたって確実に自由であることを保証する。我々FSF
+(the Free Software Foundation) は、我々のソフトウェアのほとんどに GNU
+GPL を適用している。また、我々以外にもリリースする物件に GNU GPL を適
+用している作者はいる。あなた (you) もまたあなたの作成したプログラムに 
+GNU GPL を適用することができる。
+
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  By contrast,
+the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program--to make sure it remains free
+software for all its users.  We, the Free Software Foundation, use the
+GNU General Public License for most of our software; it applies also to
+any other work released this way by its authors.  You can apply it to
+your programs, too.
+
+  我々が「フリーソフトウェア」と言うとき、この「フリー」とは「自由 
+(freedom)」の事を意味する。価格が「無料」である事を意味するのではない。
+我々の GNU GPL は、下記の自由が保証されるよう規定されている。
+  ・ユーザ (you) がフリーソフトウエアの複製を頒布すること (ユーザ 
+    (you) が望むなら、複製の頒布に対して課金してもOK)。
+  ・ユーザ (you) がフリーソフトウェアを受取った時に一緒にソースコード
+    も受取ること。あるいは、フリーソフトウェアを受取った時にはソースコー
+    ドが付いてなくても、ソースコードが欲しくなったら後から入手できるこ
+    と。
+  ・ユーザ (you) がフリーソフトウェアを改変 (change) できること。ある
+    いは、フリーソフトウェアの一部を、別の新しいフリープログラムに流用
+    できること。
+  ・「ユーザ (you) は上記の自由を持っている」事を、ユーザ (you) が知っ
+    ていること。
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it if you
+want it, that you can change the software or use pieces of it in new
+free programs, and that you know you can do these things.
+
+  ユーザの権利 (your rights) を守るために、我々は他者の下記行動を妨げ
+る必要がある。
+  ・ユーザ (you) にこれらの権利を与えない
+  ・ユーザ (you) にこれらの権利を放棄するよう求める
+このため、ソフトウェアの複製を頒布したり改変 (modify) したりする場合に、
+ユーザ (you) はある特定の義務を負う。これは、他者の自由を尊重するため
+の義務である。
+
+  To protect your rights, we need to prevent others from denying you
+these rights or asking you to surrender the rights.  Therefore, you have
+certain responsibilities if you distribute copies of the software, or if
+you modify it: responsibilities to respect the freedom of others.
+
+  例えば、課金の有無に関わらず、ユーザ (you) がプログラムの複製を頒布
+するならば、ユーザ (you) は自分自身がプログラムの複製を受取った時に得
+たのと同じ自由を、新しい受取り手 (recipients) にも受け渡さなければなら
+ない。ユーザ (you) は、受取り手がソースコードを同じように受取る (ある
+いは、入手できる) ことを保証しなければならない。そして、受取り手が自分
+自身の権利を知るように、本ライセンスに規定された条項を提示しなければな
+らない。
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must pass on to the recipients the same
+freedoms that you received.  You must make sure that they, too, receive
+or can get the source code.  And you must show them these terms so they
+know their rights.
+
+  GNU GPL を採用する開発者 (developers) は、下記の2段階を以ってユーザ
+の権利 (your rights) を守る。
+  (1) 当該ソフトウェアの著作権 (copyright) を主張する。
+  (2) ユーザ (you) に本ライセンス (this License) を提示する。そして、
+      本ライセンスは、ユーザ (you) に下記を法的に許諾するものである。
+        ・ソフトウェアの複製 (copy)
+        ・ソフトウェアの頒布 (distribute)
+        ・ソフトウェアの改変 (modify)
+
+  Developers that use the GNU GPL protect your rights with two steps:
+(1) assert copyright on the software, and (2) offer you this License
+giving you legal permission to copy, distribute and/or modify it.
+
+  開発者 (developer) および作者 (author) を保護するために、GPL は「当
+該フリーソフトウェアは無保証である」ことを明確に説明する。また、ユーザ 
+(user) と作者 (author) の目的のために、GPL は「改変版 (modified
+version) は『改変された (change)』旨が分かるよう印をつける」ことを要求
+する。これによって、改変版に問題のあった場合に、それが誤って改変前の版
+の作者に紐付けられないようにする。
+
+  For the developers' and authors' protection, the GPL clearly explains
+that there is no warranty for this free software.  For both users' and
+authors' sake, the GPL requires that modified versions be marked as
+changed, so that their problems will not be attributed erroneously to
+authors of previous versions.
+
+  デバイス (device) の中には、(制御用の) ソフトウェアの改変版をインス
+トールしたりそれを実行したりできるのをメーカー (manufacturer) だけに限
+定して、ユーザがそれをできないようにしているものがある。この事は、ユー
+ザがソフトウェアを改変 (change) する自由を保護するという目的とは、根本
+的に相容れない。そういった不正使用の体系的なパターンは、個人使用を目的
+とした製品の分野で発生する。そして、それは極めて受け容れ難いものである。
+従って、我々はこの版の GNU GPL で、そういった製品の実現を禁止するよう
+規定した。同じような問題が別の分野でも実質的に発生した場合、我々は、ユー
+ザの自由を保護するために、将来の版の GNU GPL で当該分野に適用出来るよ
+うに条項を拡張する用意がある。
+
+  Some devices are designed to deny users access to install or run
+modified versions of the software inside them, although the manufacturer
+can do so.  This is fundamentally incompatible with the aim of
+protecting users' freedom to change the software.  The systematic
+pattern of such abuse occurs in the area of products for individuals to
+use, which is precisely where it is most unacceptable.  Therefore, we
+have designed this version of the GPL to prohibit the practice for those
+products.  If such problems arise substantially in other domains, we
+stand ready to extend this provision to those domains in future versions
+of the GPL, as needed to protect the freedom of users.
+
+  最後に、全てのプログラムは絶えずソフトウェア特許の脅威にさらされてい
+る。汎用コンピュータのソフトウェアにおいて、その開発や使用を制限するよ
+うな特許は認められるべきではない。しかし、現在はそうなってしまっている。
+我々はフリープログラムに適用された特許によって当該プログラムが実質的に
+「プロプライエタリ (proprietary)」となってしまう危険性を回避する必要が
+あると考えている。これを防ぐために、特許によってプログラムを「自由でな
+く (non-free)」にできないよう GPL は保証する。
+
+  Finally, every program is threatened constantly by software patents.
+States should not allow patents to restrict development and use of
+software on general-purpose computers, but in those that do, we wish to
+avoid the special danger that patents applied to a free program could
+make it effectively proprietary.  To prevent this, the GPL assures that
+patents cannot be used to render the program non-free.
+
+  複製、頒布、改変について、正確な条項および条件 (terms and
+conditions) は下記の通りである。
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                       条項および条件
+                       TERMS AND CONDITIONS
+
+  0. 定義
+  0. Definitions.
+
+  「本ライセンス (this License)」とは、第3版の GNU GPL (GNU General
+Public License) を指す。
+
+  "This License" refers to version 3 of the GNU General Public License.
+
+  「著作権 (copyright)」とは、いわゆる著作権に限らず、他の種類の物件に
+対する著作権的な法律も意味する。例えば、半導体マスクはこれにあたる。
+
+  "Copyright" also means copyright-like laws that apply to other kinds of
+works, such as semiconductor masks.
+
+  「プログラム (the Program)」は、本ライセンスのもとで使用許諾されうる
+著作権保護可能な物件 (copyrightable work) を指す。「使用許諾された者 
+(licensee)」を「you」と呼ぶ。尚、「使用許諾された者 (licensee)」および
+「受領者 (recipient)」は、個人でも組織でもよい。
+
+  "The Program" refers to any copyrightable work licensed under this
+License.  Each licensee is addressed as "you".  "Licensees" and
+"recipients" may be individuals or organizations.
+
+  物件を「改変する (modify)」とは、著作権の上での許諾が必要なやり方で、
+当該物件の全体あるいは部分を「模倣 (copy from)」したり「改作 (adapt)」
+したりすることを意味する。ただし、そのままの複製 (exact copy) を作るこ
+とは除く。改変の結果として出来た物件を、元の物件の「改変版 (modified
+version)」と呼ぶ。あるいは、元の物件に「基づく (based on)」物件と呼ぶ。
+
+  To "modify" a work means to copy from or adapt all or part of the work
+in a fashion requiring copyright permission, other than the making of an
+exact copy.  The resulting work is called a "modified version" of the
+earlier work or a work "based on" the earlier work.
+
+  「対象物件 (covered work)」とは、改変されていないプログラムあるいは
+当該プログラムに基づく物件を意味する。
+
+  [超訳注] "covered": 「本ライセンスがカバーする」という意味で捉えると
+  分かりやすいだろう。
+
+  A "covered work" means either the unmodified Program or a work based
+on the Program.
+
+  物件を「propagate する」とは、許諾を得ずに実施した場合に、著作権関連
+法 (applicable copyright law) の下で、「you」が当該法侵害の責任を直接
+的あるいは間接的に負わなければならなくなるような全ての行為を意味する。
+ただし、物件をコンピュータ上で実行することや私的な複製を改変すること 
+(modifying a private copy) は、「propagate する」には含まない。
+「propagate する」こと (propagation) には、「複製を作ること (copying)」
+「(改変 (modify) の如何に関わらず) 頒布すること (distribution)」「公衆 
+(public) に対して公開すること」が含まれる。また、国によっては (著作権
+関連法が違うので) 他の行為もこれに当たる。
+
+  [超訳注] "applicable copyright law": 前述の定義により「著作権 
+  (copyright)」は「著作権的な」も含む。これを踏まえ、これに合わせる形
+  で "applicable" (適用できる、適切な、当てはまる) を付けていると思わ
+  れる。ここでは「著作権関連法」という訳語を充てる。
+
+  To "propagate" a work means to do anything with it that, without
+permission, would make you directly or secondarily liable for
+infringement under applicable copyright law, except executing it on a
+computer or modifying a private copy.  Propagation includes copying,
+distribution (with or without modification), making available to the
+public, and in some countries other activities as well.
+
+  物件を「convey する」とは、「propagate する」こと (propagation) のう
+ちで、他者 (other parties) が複製を作ったり複製を受取ったりできるよう
+にする行為の全てを意味する。コンピュータネットワークを介してユーザと
+ちょっとしたやりとりをする場合、それが複製の転送を含まないなら、それは
+「convey する」には当たらない。
+
+  To "convey" a work means any kind of propagation that enables other
+parties to make or receive copies.  Mere interaction with a user through
+a computer network, with no transfer of a copy, is not conveying.
+
+  対話的なユーザインタフェースが「適切な法的通告 (Appropriate Legal
+Notices)」を表示するとは、手頃 (convenient) かつはっきりと見える 
+(prominently visible) 外観を持っていて、かつ、それが下記を満たす事を言
+う。
+  (1) 適切な著作権通告 (copyright notice) を表示する。
+  (2) ユーザに対して、下記の全てを通知する。
+      ・当該物件は (保証が提供される範囲を除いて) 無保証であること。
+      ・使用許諾された者 (licensee) は本ライセンス (this License) の下
+        で当該物件を convey して良いこと。
+      ・本ライセンス (this License) の (複製の) 見方。
+ユーザインタフェースがユーザコマンドやオプションなどのリストを表示する
+場合、そのリストの要素として明示するならそれは本基準に合致する。例えば、
+メニューの表示はこれに合致する。
+
+  An interactive user interface displays "Appropriate Legal Notices"
+to the extent that it includes a convenient and prominently visible
+feature that (1) displays an appropriate copyright notice, and (2)
+tells the user that there is no warranty for the work (except to the
+extent that warranties are provided), that licensees may convey the
+work under this License, and how to view a copy of this License.  If
+the interface presents a list of user commands or options, such as a
+menu, a prominent item in the list meets this criterion.
+
+
+  1. ソースコード
+  1. Source Code.
+
+  物件の「ソースコード (source code)」とは、当該物件を改変する (making
+modifications to it) のに望ましい (preferred) 形態にあるものを意味する。
+「オブジェクトコード (object code)」とは、「ソースコード」の形態にない
+物件を言う。
+
+  [超訳注] "preferred": 「望ましい」というだけでは解釈の幅があるかも。
+
+  The "source code" for a work means the preferred form of the work
+for making modifications to it.  "Object code" means any non-source
+form of a work.
+
+  「標準インタフェース (Standard Interface)」とは、下記のいずれかに合
+致するインタフェースを意味する。
+  ・公認の標準化団体によって定義された、公式な標準。
+  ・特定のプログラム言語向けに規定されたインタフェースの場合、当該プロ
+    グラミング言語を使用する開発者の間で広範囲に渡って使用されているイ
+    ンタフェース。
+
+  A "Standard Interface" means an interface that either is an official
+standard defined by a recognized standards body, or, in the case of
+interfaces specified for a particular programming language, one that
+is widely used among developers working in that language.
+
+  実行可能な物件の「システムライブラリ (System Libraries)」とは、下記
+に合致する全てを含む。ただし、「システムライブラリ (System Libraries)」
+には当該物件の「全体」は含まない。
+  ・メジャーコンポーネントのライブラリ部
+      (a) 「メジャーコンポーネント (Major Component)」のパッケージの標
+          準的な形式に含まれているが、当該メジャーコンポーネント 
+          (Major Component) そのものを構成する要素ではないもの (is not
+          part of)。
+          かつ、
+      (b) 当該メジャーコンポーネントを前提とする物件について、当該物件
+          を使用可能とするために提供されるもの。
+    あるいは、
+  ・「標準インタフェース (Standard Interface)」を実装するものであり、
+    その実装はソースコードの形式で公衆に公開されている。
+尚、本項において「メジャーコンポーネント (Major Component)」とは、下記
+がこれに該当する。
+  ・実行可能な物件を実行する特定のOS (何でも) の基幹的なコンポーネント 
+    (カーネルやウィンドウシステムなど)。
+  ・(実行可能な) 当該物件を生成するのに使用するコンパイラ。
+  ・実行時に使用するオブジェクトコードのインタプリタ。
+
+  [超訳注] "is not part of": "be part of"で「～の不可欠な要素である」
+  「～に一枚かんでいる」。"a part of" (～の一部) とは別の意味を持って
+  いる。
+
+  The "System Libraries" of an executable work include anything, other
+than the work as a whole, that (a) is included in the normal form of
+packaging a Major Component, but which is not part of that Major
+Component, and (b) serves only to enable use of the work with that
+Major Component, or to implement a Standard Interface for which an
+implementation is available to the public in source code form.  A
+"Major Component", in this context, means a major essential component
+(kernel, window system, and so on) of the specific operating system
+(if any) on which the executable work runs, or a compiler used to
+produce the work, or an object code interpreter used to run it.
+
+  オブジェクトコード形式の物件の「対応するソース (Corresponding
+Source)」とは、当該物件の生成 (generate)、インストール (install)、(実
+行可能な物件の場合) 実行 (run)、改変 (modify) に必要な全てのソースコー
+ドを意味する。これには、前記の行為を統制 (control) するスクリプトも含
+む。ただし、「対応するソース (Corresponding Source)」には下記を含まな
+い。
+  ・当該物件のシステムライブラリ。
+  ・汎用ツールまたは一般に公開されているフリープログラム。ただし、前記
+    の行為を行う上で、改変なしで使用されること、かつ、当該物件の一部と
+    して組み込まれないこと。
+例えば、「対応するソース (Corresponding Source)」には、下記が含まれる。
+  ・当該物件のソースファイルに関連付けられたインタフェース定義ファイル。
+  ・共有ライブラリのソースコード。
+  ・動的にリンクされるサブプログラムのうち、下記に合致するもののソース
+    コード。
+      - 当該物件がそれを必要とするものとして、はっきりと (仕様として) 
+        設計されている (specifically designed)。
+        例えば、これらのサブプログラムと当該物件の他の部分との間で、親
+        密な (intimate) データ通信や処理の流れの制御がある場合は、これ
+        にあたる。
+
+  [超訳注] "that the work is ..." がどれを形容しているかは不明確;
+  "libraries"と"subprograms"の両方？"subprograms"のみ？ "such as" 以下
+  を見ると"between those subprograms"とあるので、ここでは
+  「"subprograms"のみ」という事で超訳した。
+
+  "intimate" にどのような想定があるかはFAQ参照。プログラムの内部データ
+  構造を直接やりとりするのはこれにあたるそうだ。即ち、構造体やらクラス
+  のインスタンスを引数やら戻り値でやりとりするのは "intimate" である。
+
+  The "Corresponding Source" for a work in object code form means all
+the source code needed to generate, install, and (for an executable
+work) run the object code and to modify the work, including scripts to
+control those activities.  However, it does not include the work's
+System Libraries, or general-purpose tools or generally available free
+programs which are used unmodified in performing those activities but
+which are not part of the work.  For example, Corresponding Source
+includes interface definition files associated with source files for
+the work, and the source code for shared libraries and dynamically
+linked subprograms that the work is specifically designed to require,
+such as by intimate data communication or control flow between those
+subprograms and other parts of the work.
+
+  ユーザが「対応するソース (Corresponding Source)」の他の部分から自動
+的に再生成できるものは、必ずしも「対応するソース (Corresponding
+Source)」に含まなくても良い。
+
+  The Corresponding Source need not include anything that users
+can regenerate automatically from other parts of the Corresponding
+Source.
+
+  ソースコード形式の物件の「対応するソース (Corresponding Source)」は、
+その物件そのものである。
+
+  The Corresponding Source for a work in source code form is that
+same work.
+
+  2. 基本的な許諾事項
+  2. Basic Permissions.
+
+  本ライセンス (this License) の下で許諾される全ての権利は、プログラム 
+(the Program) の著作権の有効期間の間、与えられるものである。そして、本
+ライセンスに記載された条件に合致する限り、この権利は廃止できない。本ラ
+イセンスは、改変されていないプログラムの実行を、「you」に無制限に許可
+することを確約する。対象物件 (covered work) を実行した結果として得られ
+た出力は、下記の条件に合致する場合に限り、本ライセンスの対象となる。
+  ・出力が内容を持っていて、それが対象物件 (covered work) の構成要素で
+    ある場合。
+本ライセンス (this License) は、著作権関連法に規定されているように、当
+該物件を公正使用 (fair use) する権利あるいはそれと同等の権利を「you」
+が持つ事を、ここに認める (acknowledge)。
+
+  [超訳注] 第一文はちと分かりにくい。"for the term" は「期間」でいいの
+  か？ (条項と訳出するには "terms" じゃないといかんので)
+  "fair use": 公正使用。フェアユース。
+  →http://ja.wikipedia.org/wiki/%E5%85%AC%E6%AD%A3%E4%BD%BF%E7%94%A8
+
+  All rights granted under this License are granted for the term of
+copyright on the Program, and are irrevocable provided the stated
+conditions are met.  This License explicitly affirms your unlimited
+permission to run the unmodified Program.  The output from running a
+covered work is covered by this License only if the output, given its
+content, constitutes a covered work.  This License acknowledges your
+rights of fair use or other equivalent, as provided by copyright law.
+
+  「you」は、「you」に与えられた使用許諾が有効に存続する限り無条件で、
+「you」がconveyしない対象物件 (covered work) については、それを作成、
+実行、propagateする事ができる。「you」は、下記 [条件 1] を満たす限りに
+おいて、下記 [目的 2] の下で対象物件 (covered work) を他者にconveyする
+事ができる。
+  [条件 1]
+  ・「you」が著作権の支配権を持たない全ての物件の convey において、
+    「you」は本ライセンスの条項を遵守すること。
+  [目的 2]
+  ・前記他者に「you」だけのために改変させる。
+  ・前記他者が当該物件を実行する施設を「you」に提供する。
+
+尚、他者が「you」のために対象物件 (covered work) を作成・実行する行為
+は、「you」の代わりに厳密に排他的に実施されなければならない。前記他者
+は「you」の指揮・管理の下に置かれなければならない。この時、前記他者の
+「you」との契約には、両者の関係の外に「you」の著作権物件の複製を作成す
+ることを禁止する条項が含まれ、それに基づいて作業する事を想定する。
+
+  [超訳注] [目的 2]の前者は「外注」、後者は「ホスティング」のことだと
+  思われる。
+
+  You may make, run and propagate covered works that you do not
+convey, without conditions so long as your license otherwise remains
+in force.  You may convey covered works to others for the sole purpose
+of having them make modifications exclusively for you, or provide you
+with facilities for running those works, provided that you comply with
+the terms of this License in conveying all material for which you do
+not control copyright.  Those thus making or running the covered works
+for you must do so exclusively on your behalf, under your direction
+and control, on terms that prohibit them from making any copies of
+your copyrighted material outside their relationship with you.
+
+  他の状況下における convey については、下記に記載された条件の下にのみ
+許諾される。サブライセンスは許可されない。本ライセンスのセクション10に
+よって、サブライセンスの必要がないからである。
+
+  Conveying under any other circumstances is permitted solely under
+the conditions stated below.  Sublicensing is not allowed; section 10
+makes it unnecessary.
+
+
+  3. 「Anti-Circumvention Law」からユーザの法的権利を保護すること
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+
+  対象物件 (covered work) は、下記の下で実効性のある技術的手段とは見な
+されるべきではない。
+  ・1996/12/20に採択された「著作権に関する世界知的所有権機関条約」
+    (WIPO copyright treaty) の第11章 (article 11) の責務を履行するため
+    の関連法。
+    あるいは、
+  ・当該技術的手段の迂回を禁止あるいは制限するような、上記と同等の法規。
+
+  [超訳注] "WIPO copyright treaty"
+    →http://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E4%B8%96%E7%95%8C%E7%9F%A5%E7%9A%84%E6%89%80%E6%9C%89%E6%A8%A9%E6%A9%9F%E9%96%A2%E6%9D%A1%E7%B4%84
+      ----引用; ここから----
+      この条約は第6章から第8章までで、ベルヌ条約などの既存の条約・協定
+      が単独で保護できない可能性のある事項（著作権物の譲渡・貸与、イン
+      タラクティブ送信）について規定している。また、第11章においては技
+      術的な保護手段について、第12章では著作物の保護情報を未許可で変更
+      することを禁止する規定を含んでいる。このように、デジタルコンテン
+      ツの保護を重点においており、その他の部分はベルヌ条約を超えるもの
+      ではない。
+      ----引用; ここまで----
+
+  No covered work shall be deemed part of an effective technological
+measure under any applicable law fulfilling obligations under article
+11 of the WIPO copyright treaty adopted on 20 December 1996, or
+similar laws prohibiting or restricting circumvention of such
+measures.
+
+  「you」が対象物件 (covered work) を convey する時、「you」は下記を受
+諾するものとする。
+  ・当該対象物件 (covered work) に関して本ライセンスの下で許諾された権
+    利を行使することによって「迂回 (circumvention)」できるようになる範
+    囲まで、技術的手段の迂回を禁じる法的な強制力を放棄する。
+    かつ、
+  ・当該物件のユーザに対して、技術的手段の迂回を禁止することを目的とし
+    て、「当該物件に対する活動や改変を制限する」といった形で法的権利を
+    行使する意思を放棄する。
+
+  When you convey a covered work, you waive any legal power to forbid
+circumvention of technological measures to the extent such circumvention
+is effected by exercising rights under this License with respect to
+the covered work, and you disclaim any intention to limit operation or
+modification of the work as a means of enforcing, against the work's
+users, your or third parties' legal rights to forbid circumvention of
+technological measures.
+
+
+  4. そのまんまの複製をconveyすること。
+  4. Conveying Verbatim Copies.
+
+  「you」は、「you」が受取ったままの形でプログラム (the Program) のソー
+スコードの複製を convey することができる。ただし、「you」は各々の複製
+に対して、適切な著作権表記をそれと分かるように適切に公開しなければなら
+ない。即ち、
+  ・当該コードには、本ライセンス、および本ライセンスのセクション7 を踏
+    まえて追加された「非許諾条項 (non-permissive terms)」が適用される
+    旨の記述が全て原型を保たれた状態であること (keep intact)。
+    かつ、
+  ・全くの無保証である旨の記述が全て原型を保たれた状態であること (keep
+    intact)。
+    かつ、
+  ・プログラム (the Program) と一緒に本ライセンス (this License) の複
+    製が受取り手に受け渡されること。
+
+  You may convey verbatim copies of the Program's source code as you
+receive it, in any medium, provided that you conspicuously and
+appropriately publish on each copy an appropriate copyright notice;
+keep intact all notices stating that this License and any
+non-permissive terms added in accord with section 7 apply to the code;
+keep intact all notices of the absence of any warranty; and give all
+recipients a copy of this License along with the Program.
+
+  「you」は、convey する複製の各々に課金してもしなくてもよい (price or
+no price)。また、「you」は有償でサポートや保証を提供してもよい (for a
+fee)。
+
+  [超訳注] GNU GPLv3において "price" と "fee" では意味合いが違ったはず。
+  確かFAQに載っている。
+
+  You may charge any price or no price for each copy that you convey,
+and you may offer support or warranty protection for a fee.
+
+
+  5. 改変版のソースコードをconveyすること。
+  5. Conveying Modified Source Versions.
+
+  「you」はプログラム (the Program) に基づいた (based on) 物件を 
+convey する事ができる、あるいは、プログラム (the Program) から当該物件
+を生成するための改変内容 (the modifications) をセクション4の条項の下で
+ソースコードの形式で convey する事ができる。ただし、下記の条件の全てに
+合致しなければならない。
+
+  You may convey a work based on the Program, or the modifications to
+produce it from the Program, in the form of source code under the
+terms of section 4, provided that you also meet all of these conditions:
+
+    a) 当該物件が、「you」が改変した旨と改変した日付の記述を、そうとはっ
+   きり分かるような形で含んでいること。
+
+    a) The work must carry prominent notices stating that you modified
+    it, and giving a relevant date.
+
+    b) 当該物件が、本ライセンス (thie License) 、および本ライセンスの
+   セクション7を踏まえて追加された条件の下でリリースされる旨の記述を、
+   そうとはっきり分かるような形で含んでいること。この要求事項は、セク
+   ション4で規定された要求事項「～の記述が全て原型を保たれた状態である
+   こと (keep intact all notices)」よりも優先される。
+
+    b) The work must carry prominent notices stating that it is
+    released under this License and any conditions added under section
+    7.  This requirement modifies the requirement in section 4 to
+    "keep intact all notices".
+
+    c) 「you」は、複製の所有権を取得する者に対して、本ラインセンス 
+    (this License) の下に当該物件の全体の使用許諾を与えなければならな
+    い。即ち、本ライセンス (this License) は、セクション7の下の追加条
+    項も含めて、当該物件の全体および全ての部分に対して適用されるもので
+    あり、どのようにパッケージングされているかには拠らない。本ライセン
+    ス (this License) は、他の方法で当該物件を使用許諾することを許さな
+    い。ただし、もしも「you」が当該物件をバラバラに受取ったとしても、
+    当該物件の使用許諾が無効となるものではない。
+
+    c) You must license the entire work, as a whole, under this
+    License to anyone who comes into possession of a copy.  This
+    License will therefore apply, along with any applicable section 7
+    additional terms, to the whole of the work, and all its parts,
+    regardless of how they are packaged.  This License gives no
+    permission to license the work in any other way, but it does not
+    invalidate such permission if you have separately received it.
+
+    d) 当該物件が対話的なユーザインタフェースを持つ場合、そのユーザイ
+    ンタフェースは「適切な法的通告 (Appropriate Legal Notices)」を表示
+    しなければならない。ただし、もとのプログラム (the Program) の対話
+    的ユーザインタフェースが「適切な法的通告 (Appropriate Legal
+    Notices)」を表示しないものであるならば、「you」の改変した物件で
+    「適切な法的通告 (Appropriate Legal Notices)」を表示するようにしな
+    ければならないという義務はない。
+
+    d) If the work has interactive user interfaces, each must display
+    Appropriate Legal Notices; however, if the Program has interactive
+    interfaces that do not display Appropriate Legal Notices, your
+    work need not make them do so.
+
+  対象物件 (covered work) と下記のような意味で当該物件と無関係のモノと
+を寄せ集めて一つのストレージやら一つの配布メディアにまとめた場合、それ
+を「集合体 (aggregate)」と呼ぶ。ただし、その寄集めとそれによって発生す
+る著作権が、個々の物件が許諾する範囲を超えてそのユーザの法的な権利を制
+限しない場合に限る。
+  ・寄集め物件は、本質的に対象物件の拡張ではない。
+  ・寄集め物件は、それと対象物件とを結合して一つの大きなプログラムを作
+    るような事がない。
+対象物件 (covered work) を集合体 (aggregate) に含めたからと言って、本
+ライセンス (this License) を集合体 (aggregate) の他の部分 (物件) に適
+用しなければならないわけではない。
+
+  A compilation of a covered work with other separate and independent
+works, which are not by their nature extensions of the covered work,
+and which are not combined with it such as to form a larger program,
+in or on a volume of a storage or distribution medium, is called an
+"aggregate" if the compilation and its resulting copyright are not
+used to limit the access or legal rights of the compilation's users
+beyond what the individual works permit.  Inclusion of a covered work
+in an aggregate does not cause this License to apply to the other
+parts of the aggregate.
+
+
+  6. ソースコード形式でないものをconveyすること。
+  6. Conveying Non-Source Forms.
+
+  「you」は、セクション4およびセクション5の条項の下で、対象物件 
+(covered work) をオブジェクトコード形式で convey することができる。た
+だし、下記に示すいずれかの方法で、本ライセンス (this License) の条項の
+下で機械可読な形で「対応するソース (Corresponding Source)」も同様に 
+convey しなければならない。
+
+  You may convey a covered work in object code form under the terms
+of sections 4 and 5, provided that you also convey the
+machine-readable Corresponding Source under the terms of this License,
+in one of these ways:
+
+    a) 物的な製品 (physical product) に含まれているオブジェクトコード
+    を convey する場合、または、物的な製品に統合されているオブジェクト
+    コードを convey する場合、通常のソフトウェア交換に用いられる永続的
+    な物理メディアに「対応するソース (Corresponding Source)」を固定化
+    して前記製品に添付すること。
+    尚、前記「物的な製品」には、物理的な配布メディアを含む。
+
+    a) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by the
+    Corresponding Source fixed on a durable physical medium
+    customarily used for software interchange.
+
+    b) 物的な製品 (physical product) に含まれているオブジェクトコード
+    を convey する場合、または、物的な製品に統合されているオブジェクト
+    コードを convey する場合、当該オブジェクトコードを所有する者に対し
+    て下記を提供する旨の書面での申し出を添付すること。
+      (1) 当該製品に含まれている全てのソフトウェアのうち、本ライセンス 
+          (this License) の対象となる物件の「対応するソース 
+          (Corresponding Source)」を提供する。ソースコードの提供にあたっ
+          ては、通常のソフトウェア交換に用いられる物理的なメディアを用
+          いるものとし、単にソースコードを物理的に convey することに必
+          要な以上の対価 (price) は要求しない。
+          あるいは、
+      (2) ネットワーク上のサーバにアクセスして、一切の課金なしで、「対
+          応するソース (Corresponding Source)」を複製できる。
+    尚、前記「物的な製品」には、物理的な配布メディアを含む。
+    また、前記「書面での申し出」は少なくとも3年は有効であり、かつ、当
+    該製品モデルのスペアパーツあるいはカスタマサポートを提供する限り有
+    効でなければならない。
+
+    b) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by a
+    written offer, valid for at least three years and valid for as
+    long as you offer spare parts or customer support for that product
+    model, to give anyone who possesses the object code either (1) a
+    copy of the Corresponding Source for all the software in the
+    product that is covered by this License, on a durable physical
+    medium customarily used for software interchange, for a price no
+    more than your reasonable cost of physically performing this
+    conveying of source, or (2) access to copy the
+    Corresponding Source from a network server at no charge.
+
+    c) オブジェクトコードの個々の複製を convey する場合、「対応するソー
+    ス (Corresponding Source)」も提供される旨の書面での申し出 (written
+    offer) の複製も一緒に convey すること。この代替手段は時々非商業的
+    に許可されるものであり、「you」がセクション6bに則ってオブジェクト
+    コードと書面での申し出を受取った場合に限定される。
+
+    c) Convey individual copies of the object code with a copy of the
+    written offer to provide the Corresponding Source.  This
+    alternative is allowed only occasionally and noncommercially, and
+    only if you received the object code with such an offer, in accord
+    with subsection 6b.
+
+    d) (有償・無償を問わず) 指定された場所からのアクセス手段を提供する
+    ことでオブジェクトコードを convey する場合、それ以上の課金なしで同
+    じ場所から同じような方法で「対応するソース (Corresponding Source)」
+    に対する同等のアクセス手段を提供すること。「you」は、受取り手にオ
+    ブジェクトコードだけでなく「対応するソース (Corresponding Source)」
+    も複製するよう要求する必要はない。オブジェクトコードを複製する場所
+    がネットワークサーバである場合、同等の複製ができるのであれば「対応
+    するソース (Corresponding Source)」を (「you」または第三者が運営す
+    る) 別のサーバに配置しても良い。ただし、「you」は、「対応するソー
+    ス (Corresponding Source)」を入手するための明確な方法を、当該オブ
+    ジェクトコードに隣接した所に維持しなければならない。どのサーバに
+    「対応するソース (Corresponding Source)」を配置するかとは無関係に、
+    これらの要求事項を満たす必要がある限り、「you」は「対応するソース 
+    (Corresponding Source)」が利用可能であることを保証する義務が継続す
+    る。
+
+    d) Convey the object code by offering access from a designated
+    place (gratis or for a charge), and offer equivalent access to the
+    Corresponding Source in the same way through the same place at no
+    further charge.  You need not require recipients to copy the
+    Corresponding Source along with the object code.  If the place to
+    copy the object code is a network server, the Corresponding Source
+    may be on a different server (operated by you or a third party)
+    that supports equivalent copying facilities, provided you maintain
+    clear directions next to the object code saying where to find the
+    Corresponding Source.  Regardless of what server hosts the
+    Corresponding Source, you remain obligated to ensure that it is
+    available for as long as needed to satisfy these requirements.
+
+    e) ピア・ツー・ピア (P2P) のファイル転送によってオブジェクトコード
+    を convey する場合、「you」は受け手に、下記を知らせなければならない。
+      - 当該物件のオブジェクトコードと「対応するソース (Corresponding
+        Source)」が、どこで公開されているか。
+      - 当該物件のオブジェクトコードと「対応するソース (Corresponding
+        Source)」は、サブセクション6dに則って課金なしで公開される。
+
+    e) Convey the object code using peer-to-peer transmission, provided
+    you inform other peers where the object code and Corresponding
+    Source of the work are being offered to the general public at no
+    charge under subsection 6d.
+
+  当該オブジェクトコードから分離可能な部分は、オブジェクトコード形式の
+物件を convey する時に、その中に含まなくてもよい。分離可能な部分という
+のは、そのソースコードがシステムライブラリ (System Library) として「対
+応するソース (Corresponding Source)」から除外されるものがこれにあたる。
+
+  A separable portion of the object code, whose source code is excluded
+from the Corresponding Source as a System Library, need not be
+included in conveying the object code work.
+
+  「ユーザ製品 (User Product)」とは下記のいずれかに合致するものを言う。
+  (1) 「消費者向け製品 (consumer product)」。個人、家族、家庭における
+      目的のために普通の使い方をされる (normally used) 「有形の個人資
+      産」がこれにあたる。
+      あるいは、
+  (2) 住居への統合を目的として作られたもの、あるいは、販売されるもの。
+製品が「消費者向け製品 (consumer product)」であるか否かを判定する上で
+は、疑わしいケースではその対象範囲に基づいて判断すべきである。特定のユー
+ザが受取った特定の製品を見る場合、「普通の使い方 (normally used)」とは
+当該製品分野で典型的な使い方あるいは日常的な使い方を意味する。当該特定
+ユーザの状態には関係ない。また、当該特定ユーザが当該特定製品を実際にど
+う使うか、どう使うつもりか、どう使うものと見なされているかも関係ない。
+商業的な用途を持っているか、産業的な用途を持っているか、非消費者向けの
+用途を持っているかとは関係なく、そういった用途が当該製品の用途における
+唯一の特筆すべき状態に相当しない限りにおいて、当該製品は「消費者向け製
+品 (consumer product)」である。
+
+  [超訳注] 最後の文は、よくわかりません。特に「unless such uses
+  represent the only significant mode of use of the product」。
+
+  A "User Product" is either (1) a "consumer product", which means any
+tangible personal property which is normally used for personal, family,
+or household purposes, or (2) anything designed or sold for incorporation
+into a dwelling.  In determining whether a product is a consumer product,
+doubtful cases shall be resolved in favor of coverage.  For a particular
+product received by a particular user, "normally used" refers to a
+typical or common use of that class of product, regardless of the status
+of the particular user or of the way in which the particular user
+actually uses, or expects or is expected to use, the product.  A product
+is a consumer product regardless of whether the product has substantial
+commercial, industrial or non-consumer uses, unless such uses represent
+the only significant mode of use of the product.
+
+  ユーザ製品 (User Product) の「インストール情報 (Installation
+Information)」とは、「対応するソース (Corresponding Source)」の改変版
+から作った改変版対応物件 (covered work) を当該ユーザ製品 (User
+Product) にインストールして実行するために必要とされる、方式、手順、認
+可キー、その他の情報を意味する。これらの情報は、改変版のオブジェクトコー
+ドが継続して機能することを保証するのに十分でなければならない。そして、
+改変版のオブジェクトコードが、改変版だからという理由で、その実行が妨げ
+られたり妨害されたりしてはならない。
+
+  [超訳注] 最後の一文は、「改変版にバグがあったらしょうがないけど、そ
+  うでないならば『メーカーからの提供されたプログラムじゃないから実行で
+  きない』なんて事があってはならない」ということ。その義務を、「インス
+  トール情報 (Install Information)」に求めている。
+
+  "Installation Information" for a User Product means any methods,
+procedures, authorization keys, or other information required to install
+and execute modified versions of a covered work in that User Product from
+a modified version of its Corresponding Source.  The information must
+suffice to ensure that the continued functioning of the modified object
+code is in no case prevented or interfered with solely because
+modification has been made.
+
+  「you」が、本セクションの規定の下で、ユーザ製品と共に (in, or with,
+or specifically for use in) オブジェクトコードを convey する場合、かつ、
+ユーザ製品の所有権が受け手に渡るような取引 (永続的であろうが期間限定で
+あろうが、その特性の如何に関わらず) の一部としてオブジェクトコードの 
+convey が発生する場合、本セクションの下で convey される「対応するソー
+ス (Corresponding Source)」はインストール情報 (Installation
+Information) に添付されなければならない。しかし、「you」あるいは第三者
+のいずれもが当該ユーザ製品 (User Product) に改変版のオブジェクトコード
+をインストールする事ができない場合には、この要求事項は適用されない。
+(例えば、当該物件が ROM にインストールされている場合はこれにあたる)
+
+  If you convey an object code work under this section in, or with, or
+specifically for use in, a User Product, and the conveying occurs as
+part of a transaction in which the right of possession and use of the
+User Product is transferred to the recipient in perpetuity or for a
+fixed term (regardless of how the transaction is characterized), the
+Corresponding Source conveyed under this section must be accompanied
+by the Installation Information.  But this requirement does not apply
+if neither you nor any third party retains the ability to install
+modified object code on the User Product (for example, the work has
+been installed in ROM).
+
+  「インストール情報 (Installation Information) を提供しなければならな
+い」という要求事項は、下記に対するサポートサービス、保証、更新を提供し
+続けなければならないことを要求するものではない。
+  ・受取り手によって改変あるいはインストールされた物件。
+  ・改変あるいはインストールされた物件の入ったユーザ製品。
+改変そのものが、実質的にネットワーク運用に悪影響を及ぼす場合、あるいは、
+ネットワーク通信のルールやプロトコルに違反する場合、ネットワークへのア
+クセスは拒絶され得る。
+
+  The requirement to provide Installation Information does not include a
+requirement to continue to provide support service, warranty, or updates
+for a work that has been modified or installed by the recipient, or for
+the User Product in which it has been modified or installed.  Access to a
+network may be denied when the modification itself materially and
+adversely affects the operation of the network or violates the rules and
+protocols for communication across the network.
+
+  本セクションに則って convey される「対応するソース (Corresponding
+Source)」および提供されるインストール情報 (Installation Information) 
+は、公に文書化されたフォーマットでなければならない (かつ、当該フォーマッ
+トを参照するための実装がソースコード形式で公開されていなければならない)。
+また、その中身を取り出したり、読んだり、複製したりするのに、特殊なパス
+ワードやキーのようなものを要求してはならない。
+
+  Corresponding Source conveyed, and Installation Information provided,
+in accord with this section must be in a format that is publicly
+documented (and with an implementation available to the public in
+source code form), and must require no special password or key for
+unpacking, reading or copying.
+
+
+  7. 追加条項。
+  7. Additional Terms.
+
+  「追加許諾条項 (additional permissions)」とは、本ライセンス (this
+License) の条項を補足する条項のことで、一つまたは複数の条件に対して例
+外を設けることを言う。「追加許諾条項 (additional permissions)」がプロ
+グラムの全体 (the entire Program) に適用される場合、当該条項はもともと
+本ライセンス (this License) に含まれていたものとして扱われる。ただし、
+その範囲は関連法規の下で有効な範囲に限定される。「追加許諾条項 
+(additional permissions)」がプログラム (the Program) の (全体でなく) 
+部分のみに適用される場合、当該部分は当該許諾条項の下で分離して使用して
+もよい。ただし、プログラム全体 (the entire Program) は追加許諾条項 
+(additional permissions) の如何に関わらず本ライセンス (this License) 
+の規定が適用され続ける。
+
+  "Additional permissions" are terms that supplement the terms of this
+License by making exceptions from one or more of its conditions.
+Additional permissions that are applicable to the entire Program shall
+be treated as though they were included in this License, to the extent
+that they are valid under applicable law.  If additional permissions
+apply only to part of the Program, that part may be used separately
+under those permissions, but the entire Program remains governed by
+this License without regard to the additional permissions.
+
+  「you」が対象物件 (covered work) の複製を convey する時、「you」は当
+該複製から追加許諾条項 (additional permissions) を削除しても良い (選択
+の自由は「you」にある)。追加許諾条項の削除は、当該複製の全体／部分のい
+ずれについてでも許可される。(「you」が当該物件を改変 (modify) した時、
+追加許諾条項 (additional permissions) 自身が当該追加許諾条項そのものを
+削除するよう求める場合もありうる。) 「you」が対象物件 (covered work) 
+に追加した要素については、「you」が当該要素に対して追加許諾条項 
+(additional permissions) を設定してもよい。ただし、当該要素は、「you」
+が著作権による許諾を持っている、あるいは、「you」が著作権による許諾を
+人に与えられるものであること。
+
+  When you convey a copy of a covered work, you may at your option
+remove any additional permissions from that copy, or from any part of
+it.  (Additional permissions may be written to require their own
+removal in certain cases when you modify the work.)  You may place
+additional permissions on material, added by you to a covered work,
+for which you have or can give appropriate copyright permission.
+
+  本ライセンス (this License) の他の条項 (provision) に関わらず、「you」
+が対象物件 (covered work) に追加した要素については、「you」は本ライセ
+ンス (this License) の条項に対して、下記条項を補足する事ができる。(た
+だし、当該要素の著作権保有者の許可がなければならない)
+
+  Notwithstanding any other provision of this License, for material you
+add to a covered work, you may (if authorized by the copyright holders of
+that material) supplement the terms of this License with terms:
+
+    a) 本ライセンス (this License) のセクション15およびセクション16に
+    規定された条項とは異なる形で、「保証の免責条項」あるいは「責任の限
+    定条項」を宣言すること。
+    あるいは、
+
+    a) Disclaiming warranty or limiting liability differently from the
+    terms of sections 15 and 16 of this License; or
+
+    b) 当該要素 (that material)、あるいは、当該要素を含む物件によって
+    表示される適切な法的通告 (Appropriate Legal Notices) の中に、正当
+    な法的通告 (legal notices) あるいは正当な著作者の帰属 (author
+    attributions) を特定の形で維持することを要求すること。
+    あるいは、
+
+    b) Requiring preservation of specified reasonable legal notices or
+    author attributions in that material or in the Appropriate Legal
+    Notices displayed by works containing it; or
+
+    c) 当該要素の起源 (origin; 由来、素性) の不当表示を禁止すること。
+    または、当該要素を改変した場合に、元の版 (original version) とは違
+    う方法 (かつ、reasonable ways でなければならない) で、当該要素の改
+    変版にそうであることが分かるよう印をつけることを要求すること。
+    あるいは、
+
+    c) Prohibiting misrepresentation of the origin of that material, or
+    requiring that modified versions of such material be marked in
+    reasonable ways as different from the original version; or
+
+    d) 当該要素の使用許諾者 (licensors) または当該要素の作者 (authors) 
+    の名前を宣伝目的 (publicity purposes) で使用することを制限すること。
+    あるいは、
+
+    d) Limiting the use for publicity purposes of names of licensors or
+    authors of the material; or
+
+    e) 商標関連法の下で、商号 (trade names)、商標 (trademarks)、サービ
+    スマーク (service marks) の使用権を許諾しないこと。
+    あるいは、
+
+    e) Declining to grant rights under trademark law for use of some
+    trade names, trademarks, or service marks; or
+
+    f) 受取り手に対する「責任」を契約上の前提として当該要素 (改変版を
+    含む) を convey した者に対して、当該要素の使用許諾者 (licensors) 
+    と作者 (authors) への補償 (indemnification; 賠償金) を要求すること。
+    ただし、前記「責任」とは、前記「契約上の前提」によって前記「使用許
+    諾者 (licensors)」および前記「作者 (authors)」に直接的に課せられる
+    ものであること。(そうでない「責任」については、本項の対象外)
+
+    f) Requiring indemnification of licensors and authors of that
+    material by anyone who conveys the material (or modified versions of
+    it) with contractual assumptions of liability to the recipient, for
+    any liability that these contractual assumptions directly impose on
+    those licensors and authors.
+
+  他のあらゆる「許諾しない (non-permissive)」旨の追加条項は、セクショ
+ン10の意味で「追加制限 (further restrictions)」であると見なされる。
+「you」がプログラム (the Program) の全体あるいは部分を受取った時、当該
+プログラムが本ライセンス (this License) と「追加制限 (further
+restrictions)」条項に従う旨の通告を含んでいる場合、「you」は当該追加制
+限条項を削除することができる。使用許諾文書 (license document) が「追加
+制限 (further restriction)」を含んでいて、ただし、当該使用許諾文書が再
+ライセンスを許可している場合、または、当該使用許諾文書が本ライセンス 
+(this License) の下での convey を許可している場合、「you」は当該使用許
+諾文書 (license document) の条項が適用される要素を対象物件 (covered
+work) に対して追加することができる。ただし、再ライセンスあるいは 
+convey の時点で、追加制限 (further restriction) は削除される (survive 
+しない)。
+
+  [超訳注] 後半は、GNU GPLv3とは別のライセンスの下で配布されている物件
+  の要素を、GNU GPLv3の対象物件に組み込む話。this License と a license
+  document という言葉を明確に使い分けている。
+
+  All other non-permissive additional terms are considered "further
+restrictions" within the meaning of section 10.  If the Program as you
+received it, or any part of it, contains a notice stating that it is
+governed by this License along with a term that is a further
+restriction, you may remove that term.  If a license document contains
+a further restriction but permits relicensing or conveying under this
+License, you may add to a covered work material governed by the terms
+of that license document, provided that the further restriction does
+not survive such relicensing or conveying.
+
+  「you」が対象物件 (covered work) に対して本セクションに則って条項を
+追加する場合、「you」は下記に従って当該条項を明示しなければならない。
+  ・関連するソースファイルの中に、当該ファイルに適用する追加条項の文面
+    を記述する。
+    あるいは、
+  ・関連するソースファイルの中に、当該ファイルに適用する追加条項の文面
+    をどこで確認することができるかを示した通告を記述する。
+
+  If you add terms to a covered work in accord with this section, you
+must place, in the relevant source files, a statement of the
+additional terms that apply to those files, or a notice indicating
+where to find the applicable terms.
+
+  許諾、非許諾 (permissive or non-permissive) の如何によらず、追加条項
+(additional terms) は、書面による使用許諾として他と分離した形で提示し
+ても良い。あるいは、追加条項を例外として提示しても良い。
+どちらの方法であっても、本セクションにて規定された要求事項は適用される。
+
+  Additional terms, permissive or non-permissive, may be stated in the
+form of a separately written license, or stated as exceptions;
+the above requirements apply either way.
+
+
+  8. 終了。
+  8. Termination.
+
+  「you」は、本ライセンス (this License) の下に明確に規定されていない
+場合には、対象物件 (covered work) を propagate あるいは convey できな
+い。他の方法による propagate あるいは convey の試みは無効である。また、
+こういった試みを実施した時点で、本ライセンス (this License) の下で許諾
+されていた「you」の権利は自動的に終了する (セクション11 第3段落の下で
+与えられていた特許使用権も含めて終了する)。
+
+  You may not propagate or modify a covered work except as expressly
+provided under this License.  Any attempt otherwise to propagate or
+modify it is void, and will automatically terminate your rights under
+this License (including any patent licenses granted under the third
+paragraph of section 11).
+
+  ただし、「you」が本ライセンス (this License) の違反行為 (violation) 
+を停止したならば、著作権者 (copyright holder) から「you」への使用許諾
+は、
+  (a) 著作権者が「you」への使用許諾を明確に終了させていない場合は、
+      「一時的 (provisionally)」に回復する。
+  (b) 「you」が違反行為を停止してから60日以内に、著作権者が適正な方法
+      で「you」に対して違反行為を告知できなかった場合は、「恒久的 
+      (permanently)」に回復する。
+
+  However, if you cease all violation of this License, then your
+license from a particular copyright holder is reinstated (a)
+provisionally, unless and until the copyright holder explicitly and
+finally terminates your license, and (b) permanently, if the copyright
+holder fails to notify you of the violation by some reasonable means
+prior to 60 days after the cessation.
+
+  さらに、下記の場合、著作権者 (copyright holder) から「you」への使用
+許諾は、「恒久的 (permanently)」に回復する。
+  ・当該著作権者 (copyright holder) が適正な方法で「you」に対して違反
+    行為を告知して、
+    かつ、
+  ・それが、(他の物件も含めて) 本ライセンス (this License) に対する違
+    反行為の告知を、当該著作権者 (that copyright holder) から、初めて
+    受けたもので、
+    かつ、
+  ・「you」が告知を受けてから30日以内に、「you」が侵害行為を矯正した 
+    (cure)。
+
+  Moreover, your license from a particular copyright holder is
+reinstated permanently if the copyright holder notifies you of the
+violation by some reasonable means, this is the first time you have
+received notice of violation of this License (for any work) from that
+copyright holder, and you cure the violation prior to 30 days after
+your receipt of the notice.
+
+  本セクションの下で、「you」の権利が終了したとしても、本ライセンス 
+(this License) の下で「you」から複製あるいは権利を受渡された当事者の使
+用許諾が終了するものではない。「you」の権利が終了し、かつ、恒久的に回
+復しなかった場合、「you」はセクション10の下で同じ要素に対する新しい使
+用許諾を得る資格を持たない。
+
+  Termination of your rights under this section does not terminate the
+licenses of parties who have received copies or rights from you under
+this License.  If your rights have been terminated and not permanently
+reinstated, you do not qualify to receive new licenses for the same
+material under section 10.
+
+
+  9. 複製を持つことに関しては受諾を求めない。
+  9. Acceptance Not Required for Having Copies.
+
+  「you」は、プログラム (the Program) の複製を受取ったり実行するだけで
+あれば、本ライセンス (this License) を受諾する必要は無い。複製を受取る
+ためにピア・ツー・ピア (P2P) の転送を使用した結果として、付随的に対象
+物件 (covered work) を propagate することになってしまう場合でも、同じ
+ように、本ライセンスを受諾する必要は無い。ただし、対象物件 (covered
+work) を propagate あるいは改変 (modify) する権利を「you」に許諾するも
+のは、本ライセンス (this License) の他には存在しない。「you」が本ライ
+センス (this License) を受諾しないでこのような行為を行った場合は、それ
+は著作権を侵害する。即ち、「you」が対象物件 (covered work) を改変 
+(modify) したり propagate するということは、自分自身 (= you) が本ライ
+センス (this License) を受諾した事を示唆する。
+
+  You are not required to accept this License in order to receive or
+run a copy of the Program.  Ancillary propagation of a covered work
+occurring solely as a consequence of using peer-to-peer transmission
+to receive a copy likewise does not require acceptance.  However,
+nothing other than this License grants you permission to propagate or
+modify any covered work.  These actions infringe copyright if you do
+not accept this License.  Therefore, by modifying or propagating a
+covered work, you indicate your acceptance of this License to do so.
+
+
+  10. 下流の受領者に対する自動的な使用許諾。
+  10. Automatic Licensing of Downstream Recipients.
+
+  「you」が対象物件 (covered work) を convey する時は必ず、受領者は原
+本 (original) の使用許諾者 (licensor) から自動的に使用許諾 (license) 
+を受取る。この使用許諾は、当該物件を実行 (run)、改変 (modify)、
+propagate するものであり、本ライセンス (this License) に従うものである。
+「you」は、第三者が本ライセンス (this License) を遵守するよう強制する
+ことに責任を負うものではない。
+
+  [超訳注] 再ライセンスではなく原作者からの直接使用許諾となるというこ
+  と。convey した後で、受取った者がライセンス違反しても、それはyouの責
+  任ではない、ってこと。
+
+  Each time you convey a covered work, the recipient automatically
+receives a license from the original licensors, to run, modify and
+propagate that work, subject to this License.  You are not responsible
+for enforcing compliance by third parties with this License.
+
+  「事業体取引 (entity transaction)」とは、「組織を移管する取引」「組
+織の事実上全ての資産を移管する取引」「組織を分割する取引」「組織を合併
+する取引」を言う。対象物件 (covered work) の propagate が「事業体取引 
+(entity transaction)」の結果として発生する場合、当該取引の当事者のうち
+当該物件の複製を受取った当事者の各々が、前段落の下で前任者の持っていた 
+(あるいは、持ち得た) 当該物件の使用許諾の全てを受け継ぐ。加えて、前任
+者が当該物件の「対応するソース (Corresponding Source)」の所有権を持っ
+ていた (あるいは、適正な行為によって持ち得た) のであれば、当該当事者も
+当該物件の「対応するソース (Corresponding Source)」の所有権を受け継ぐ。
+
+  [超訳注] "entity transaction": 術語? 適当な訳語が見つかっていない。
+  "transferring control": 移管。多分この訳語が一番分かり易い。
+
+  An "entity transaction" is a transaction transferring control of an
+organization, or substantially all assets of one, or subdividing an
+organization, or merging organizations.  If propagation of a covered
+work results from an entity transaction, each party to that
+transaction who receives a copy of the work also receives whatever
+licenses to the work the party's predecessor in interest had or could
+give under the previous paragraph, plus a right to possession of the
+Corresponding Source of the work from the predecessor in interest, if
+the predecessor has it or can get it with reasonable efforts.
+
+  「you」は、本ライセンス (this License) の下で許諾されている権利ある
+いは確約されている権利の行使にあたっていかなる「追加制限 (further
+restrictions)」も課してはならない。例えば、
+  ・「you」は、使用許諾料 (license fee)、著作権使用料 (royalty)、ある
+    いは、本ライセンス (this License) で許諾されている権利を行使する上
+    でのその他の課金を課してはならない。
+  ・プログラム (the Program) の全体あるいはその部分を、作成、使用、販
+    売、販売のための申し出、輸入したりする事が、特許権を侵害するものと
+    主張して訴訟を起こしてはならない (訴訟における交差請求 
+    (cross-claim) や反訴要求 (counterclaim) も含めて)。
+
+  [超訳注] 後半は「特許訴訟に GNU GPLv3 なものを使うな」ということか。
+
+  You may not impose any further restrictions on the exercise of the
+rights granted or affirmed under this License.  For example, you may
+not impose a license fee, royalty, or other charge for exercise of
+rights granted under this License, and you may not initiate litigation
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+any patent claim is infringed by making, using, selling, offering for
+sale, or importing the Program or any portion of it.
+
+
+  11. 特許。
+  11. Patents.
+
+  「寄稿者 (contributor)」とは、本ライセンス (this License) の下で、プ
+ログラム (the Program) あるいはプログラムに基づいた物件の使用を許諾す
+る権限を持った著作権者 (copyright holder) のことである。寄稿者によって
+使用許諾される物件を「寄稿者版 (contributor's version)」と呼ぶ。
+
+  A "contributor" is a copyright holder who authorizes use under this
+License of the Program or a work on which the Program is based.  The
+work thus licensed is called the contributor's "contributor version".
+
+  寄稿者 (contributor) の「本質的な特許請求項 (essential patent
+claims)」とは、寄稿者が所有あるいは統制権を持つ特許請求項 (既に特許権
+を取得しているか、これから取得するかは問わず) のうち、本ライセンス
+(this License) で許諾される行為によって侵害され得るもの全てを言う。こ
+のような行為には、寄稿者版 (contributor's version) を作成、使用、販売
+することが含まれる。ただし、寄稿者版 (contributor's version) をさらに
+改変 (further modification) した結果としてのみ侵害されるような特許請求
+項はこれに含まない。この定義の狙いにおいては、「統制権を持つ (control)」
+の意味には本ライセンス (this License) の要求事項に矛盾しない方法で特許
+使用権を再許諾 (patent sublicenses) する権利が含まれる。
+
+  A contributor's "essential patent claims" are all patent claims
+owned or controlled by the contributor, whether already acquired or
+hereafter acquired, that would be infringed by some manner, permitted
+by this License, of making, using, or selling its contributor version,
+but do not include claims that would be infringed only as a
+consequence of further modification of the contributor version.  For
+purposes of this definition, "control" includes the right to grant
+patent sublicenses in a manner consistent with the requirements of
+this License.
+
+  各寄稿者 (contributor) は、「you」に対して、寄稿者の「本質的な特許請
+求項 (essential patent claims)」の下で、非排他的 (non-exclusive) かつ
+世界的かつ無償 (royalty-free) での特許使用権を許諾する。使用許諾は、作
+成、使用、販売、販売のための申し出、輸入する権利に関するものであり、ま
+た、寄稿者版の中身を実行、改変、propagate する権利がさらに該当する。
+
+  Each contributor grants you a non-exclusive, worldwide, royalty-free
+patent license under the contributor's essential patent claims, to
+make, use, sell, offer for sale, import and otherwise run, modify and
+propagate the contents of its contributor version.
+
+  以下の3段落において、「特許権使用許諾 (patent license)」とは、特許権
+は保有するが、それを行使しない旨の明示的な合意 (agreement) あるいは確
+約 (commitment) を意味する (例えば、特許を実施する明示的な許可であった
+り、特許侵害に対して訴訟を起こさないという契約 (covenant) がこれにあた
+る)。そのような「特許権使用許諾 (patent license)」を当事者に「与える 
+(grant)」とは、当該当事者に対して特許権を行使しない旨の合意あるいは確
+約を結ぶことを意味する。
+
+  In the following three paragraphs, a "patent license" is any express
+agreement or commitment, however denominated, not to enforce a patent
+(such as an express permission to practice a patent or covenant not to
+sue for patent infringement).  To "grant" such a patent license to a
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+
+  「you」が対象物件 (covered work) を convey する場合、下記[条件 1]に
+合致するならば、「you」は下記[義務 2]を果たさなければならない。
+  [前提 1]
+  ・「you」は、当該対象物件が「特許権使用許諾 (patent license)」に「依
+    存していることを知っている (knowingly relying)」。
+    かつ、
+  ・当該物件の「対応するソース (Corresponding Source)」が、下記の意味
+    で、誰でも複製できる状態にない。
+      - 無償で (free of charge) で複製できること。
+        かつ、
+      - 本ライセンス (this License) の条項の下に複製できること。
+        かつ、
+      - 誰もが利用可能なネットワークサーバやその他のアクセス手段を介し
+        てアクセスできること。
+  [義務 2]
+  (1) 「対応するソース (Corresponding Source)」を誰でも複製できる状態
+      におくこと。
+      あるいは、
+  (2) この特定の物件に対する「特許権使用許諾 (patent license)」による
+      利益を自らなくすよう手配すること。
+      あるいは、
+  (3) 本ライセンス (this License) の要求事項に矛盾しない方法で、「特許
+      権使用許諾 (patent license)」を下流の受領者にまで拡大するよう手
+      配すること。
+尚、「依存することを知っている (knowingly relying)」とは、「you」が下
+記の事柄 (「特許権使用許諾 (patent license)」ではなく) を事実上知って
+いることがこれにあたる。
+  ・「you」が対象物件 (covered work) をある国で convey する時に、ある
+    いは「you」から受取った者が対象物件 (covered work) をある国で使用
+    する時に、
+  ・その行為が、当該国における一つあるいは複数の識別可能な特許を侵害し
+    得るものであり、
+  ・かつ、前記特許が有効である事を確信しうるだけの十分な根拠を、「you」
+    が持っている。
+
+  [超訳注] 文の構造は複雑 (GNU GPLv3中でも3本の指に入る) だが、何度も
+  読み返すと、なんとか見えてくる。この段落については、細かい修飾関係を
+  別途図示した方が良いかも。
+
+  If you convey a covered work, knowingly relying on a patent license,
+and the Corresponding Source of the work is not available for anyone
+to copy, free of charge and under the terms of this License, through a
+publicly available network server or other readily accessible means,
+then you must either (1) cause the Corresponding Source to be so
+available, or (2) arrange to deprive yourself of the benefit of the
+patent license for this particular work, or (3) arrange, in a manner
+consistent with the requirements of this License, to extend the patent
+license to downstream recipients.  "Knowingly relying" means you have
+actual knowledge that, but for the patent license, your conveying the
+covered work in a country, or your recipient's use of the covered work
+in a country, would infringe one or more identifiable patents in that
+country that you have reason to believe are valid.
+
+  単一の取引あるいは単一の協定 (arrangement) に準拠あるいは関連して、
+「you」が対象物件 (covered work) を convey する場合、あるいは、「you」
+が対象物件の convey をお膳立てするために propagate する場合、「you」が
+当該対象物件 (covered work) を受取った当事者に対して「特許権使用許諾 
+(patent license)」を与えるならば、当該「特許権使用許諾 (patent
+license)」は、当該対象物件 (covered work) およびそれに基づく物件の全て
+の受領者に自動的に拡張される。尚、当該「特許権使用許諾 (patent
+license)」で許可される行為とは、当該対象物件 (covered work) の複製を、
+使用、propagate、改変 (modify)、convey する事がこれにあたる。
+
+  If, pursuant to or in connection with a single transaction or
+arrangement, you convey, or propagate by procuring conveyance of, a
+covered work, and grant a patent license to some of the parties
+receiving the covered work authorizing them to use, propagate, modify
+or convey a specific copy of the covered work, then the patent license
+you grant is automatically extended to all recipients of the covered
+work and works based on it.
+
+  「特許権使用許諾 (patent license)」は、下記のいずれかに合致する場合、
+「差別的 (discriminatory)」であると呼ぶ。
+  ・当該「特許権使用許諾 (patent license)」が、本ライセンス (this
+    License) の下で明確に許諾される一つあるいは複数の権利について、そ
+    れを対象範囲の中に含まない。
+  ・当該「特許権使用許諾 (patent license)」が、本ライセンス (this
+    License) の下で明確に許諾される一つあるいは複数の権利について、そ
+    の行使を禁止している。
+  ・当該「特許権使用許諾 (patent license)」が、本ライセンス (this
+    License) の下で明確に許諾される一つあるいは複数の権利について、そ
+    れが行使できないよう (non-exercise of) 条件付けされている。
+「you」は、下記に該当する場合に、対象物件 (covered work) を convey で
+きない。
+  ・「you」が、ソフトウェアの頒布を事業とする第三者と提携している当事
+    者であり、
+    かつ、
+  ・前記提携の下で、「you」が当該物件を convey する行為の範囲に基づい
+    て、「you」が当該第三者に対して報酬を支払うものであり、
+    かつ、
+  ・前記提携の下で、「you」から当該対象物件 (covered work) を受取る当
+    事者に対して、当該第三者が下記に該当する「差別的 (discriminatory)」
+    な「特許権使用許諾 (patent license)」を与える。
+      (a) 「you」が convey した当該対象物件 (covered work) の複製 (あ
+          るいは、前記複製から作られた複製) に関連した「特許権使用許
+          諾」。
+	  あるいは、
+      (b) 当該対象物件 (covered work) を含む特定の製品あるいは寄集めに
+          対する「特許権使用許諾」、あるいは、当該対象物件 (covered
+          work) を含む特定の製品あるいは寄集めに関連した「特許権使用許
+          諾」。
+    かつ、
+  ・「you」が前記提携を結んだのが 2007/03/28 以降 (2007/03/28を含む)、
+    かつ、当該「特許権使用許諾 (patent license)」が与えられたのが 
+    2007/03/28 以降 (2007/03/28を含む) であること。
+
+  [超訳注] 最後の unless のところは、ド・モルガンの法則で訳出した。
+  (unless A or B => if (not A) and (not B))
+
+  A patent license is "discriminatory" if it does not include within
+the scope of its coverage, prohibits the exercise of, or is
+conditioned on the non-exercise of one or more of the rights that are
+specifically granted under this License.  You may not convey a covered
+work if you are a party to an arrangement with a third party that is
+in the business of distributing software, under which you make payment
+to the third party based on the extent of your activity of conveying
+the work, and under which the third party grants, to any of the
+parties who would receive the covered work from you, a discriminatory
+patent license (a) in connection with copies of the covered work
+conveyed by you (or copies made from those copies), or (b) primarily
+for and in connection with specific products or compilations that
+contain the covered work, unless you entered into that arrangement,
+or that patent license was granted, prior to 28 March 2007.
+
+  暗黙の特許権使用許諾や他の特許権侵害に対する防衛は、特許関連法の下で
+「you」が実施可能なものである。本ライセンス (this License) の規定は、
+これらの実施を排除あるいは制限するものとして解釈されるべきものではない。
+
+  Nothing in this License shall be construed as excluding or limiting
+any implied license or other defenses to infringement that may
+otherwise be available to you under applicable patent law.
+
+
+  12. 他者の自由を奪ってはならない。
+  12. No Surrender of Others' Freedom.
+
+  本ライセンス (this License) の条件と矛盾するような条件が「you」に課
+せられた場合 (裁判所の命令、契約などなどによって)、前記条件によって本
+ライセンス (this License) の条件が免除されるものではない。本ライセンス 
+(this License) の下の義務と他の関連する義務とを同時に満足しつつ対象物
+件 (covered work) を convey できないのであれば、それは即ち、結果的に
+「you」は対象物件を convey してはならない、ということを意味する。例え
+ば、もしも「you」がプログラム (the Program) を convey した相手から使用
+料 (royalty) を徴収するような義務を負う条項に対して合意したのであれば、
+その合意条項と本ライセンス (this License) の両方を同時に満足するにはプ
+ログラム (the Program) の convey を完全に差し控えなければならない。
+
+  If conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot convey a
+covered work so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you may
+not convey it at all.  For example, if you agree to terms that obligate you
+to collect a royalty for further conveying from those to whom you convey
+the Program, the only way you could satisfy both those terms and this
+License would be to refrain entirely from conveying the Program.
+
+
+  13. GNU Affero Gneral Public License と共に使う。
+  13. Use with the GNU Affero General Public License.
+
+  本ライセンス (this License) の他の条項の如何に関わらず、「you」は下
+記が許諾される。
+  ・対象物件を、GNU Affero General Public Licenseの第3版の下で使用許諾
+    されている物件とリンクまたは結合して単一の物件にすること。
+  ・上記の結果として出来た物件を convey すること。
+本ライセンス (this License) の条項は、本ライセンスの対象物件 (covered
+work) である部分に対して継続して適用される。ただし、GNU Affero General
+Public License のセクション13にある特殊な要求事項については、当該結合
+物件の全体に対して適用される。尚、GNU Affero Gneral Public License の
+セクション13とは、ネットワークを介した相互作用に関するものである。
+
+  Notwithstanding any other provision of this License, you have
+permission to link or combine any covered work with a work licensed
+under version 3 of the GNU Affero General Public License into a single
+combined work, and to convey the resulting work.  The terms of this
+License will continue to apply to the part which is the covered work,
+but the special requirements of the GNU Affero General Public License,
+section 13, concerning interaction through a network will apply to the
+combination as such.
+
+
+  14. 本ライセンス (this License) の改定版について。
+  14. Revised Versions of this License.
+
+  FSFは、時々、GNU GPLの改定版あるいは新版を発行できる。新版は、その理
+念 (spirit) において前の版と変わることは無いが、新しい問題や新しい懸念
+事項を解決するために細かい所では変わり得る。
+
+  The Free Software Foundation may publish revised and/or new versions of
+the GNU General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+  各版は、明確に区別できるよう版番号が割り振られている。プログラム 
+(the Program) が、特定の版番号と「あるいは、それ以降の任意の版 (or any
+later version)」という記述を以って GNU GPL が適用される旨を明示してい
+るのであれば、「you」は実際に適用する GNU GPL の版を当該版番号もしくは
+FSFから発表されるそれ以降の版の GNU GPL の中から自分で選択する事ができ
+る。プログラム (the Program) が GNU GPL の版番号を明示していないならば、
+「you」は実際に適用する GNU GPL の版をこれまでにFSFから発表された任意
+の版から選択する事ができる。
+
+  Each version is given a distinguishing version number.  If the
+Program specifies that a certain numbered version of the GNU General
+Public License "or any later version" applies to it, you have the
+option of following the terms and conditions either of that numbered
+version or of any later version published by the Free Software
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License, you may choose any version ever published
+by the Free Software Foundation.
+
+  プログラム (the Program) に適用する GNU GPL の版が、代理人によって決
+定できる旨が明記されている場合、当該代理人がどの版を受諾したかを宣言す
+る公式声明に基づいて、「you」が当該プログラム (the Program) に対して当
+該版の GNU GPL を選択する事で「you」に対する使用許諾が承認される。
+
+  If the Program specifies that a proxy can decide which future
+versions of the GNU General Public License can be used, that proxy's
+public statement of acceptance of a version permanently authorizes you
+to choose that version for the Program.
+
+  後から発表される版の使用許諾においては、「you」は追加の許諾あるいは
+異なる許諾が与えられる場合がる。ただし、後から発表される版を「you」が
+選択したとしても、作者 (author) あるいは著作権者 (copyright holder) に
+足して追加の義務が発生する事はない。
+
+  Later license versions may give you additional or different
+permissions.  However, no additional obligations are imposed on any
+author or copyright holder as a result of your choosing to follow a
+later version.
+
+
+  15. 保証の免責条項。
+  15. Disclaimer of Warranty.
+
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+
+  16. 責任の限定条項。
+  16. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+
+  17. セクション15およびセクション16の説明。
+  17. Interpretation of Sections 15 and 16.
+
+  前記「保証の免責条項」および「責任の限定条項」が、その条文に準じて、
+ある地域で法的な効力 (local legal effect) を発効できない場合、
+"reviewing court" (審査法廷?) は、プログラムに関連するあらゆる民事責任 
+(civil liability) を極限まで最小化するような (most closely
+approximates an absolute waiver) 当該地域の法規を適用すべきである。た
+だし、対価 (fee) を払ってプログラム (the Program) の複製に対する保証や
+責任を得ている場合は除く。
+
+  [超訳注] "reviewing court" というのが米国にはあるらしい。日本語で何
+  と言うか、あるいは、そもそも日本にそれに対応するものがあるか、は不明。
+
+  If the disclaimer of warranty and limitation of liability provided
+above cannot be given local legal effect according to their terms,
+reviewing courts shall apply local law that most closely approximates
+an absolute waiver of all civil liability in connection with the
+Program, unless a warranty or assumption of liability accompanies a
+copy of the Program in return for a fee.
+
+                     条項および条件はここまで
+                     END OF TERMS AND CONDITIONS
+
+            「you」の新しいプログラムにこれらの条項を適用する方法
+            How to Apply These Terms to Your New Programs
+
+  「you」が新しいプログラムを開発し、それを多くの人に使って欲しいと思
+うのであれば、それを「フリーソフトウェア」とするのが最良の方法である。
+これによって、全ての人が当該プログラムを再頒布したり改変できたりするよ
+うになる。
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  このためには、当該プログラムに対して下記の通告を添付すること。無保証
+であることを効果的に宣言する上でも、各ソースファイルの先頭に添付するの
+が最も安全であろう。また、これによって各ファイルは少なくとも「著作権表
+記」行を持ち、かつ、ライセンスの全通告がどこで手に入るかに対するポイン
+タを持つことになる。
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+state the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+また、「you」に対して e-mail または昔ながらの郵便でコンタクトする方法
+に関する情報も追加すること。
+
+Also add information on how to contact you by electronic and paper mail.
+
+  当該プログラムが、コンソール上で何らかの相互作用をする場合、対話的モー
+ドの開始時に下記のような短い通告文を出力するようにすること。
+
+  If the program does terminal interaction, make it output a short
+notice like this when it starts in an interactive mode:
+
+    <program>  Copyright (C) <year>  <name of author>
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+上記ではサブコマンド「show w」と「show c」を仮定しているが、これに対し
+ては GNU GPL の適切な抜粋を表示するべきである。もちろん、「you」のプロ
+グラムのサブコマンドはこれと異なっても良い。GUIインタフェースの場合は、
+「about box」を使用するのが良いだろう。
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, your program's commands
+might be different; for a GUI interface, you would use an "about box".
+
+  場合によっては、「you」は、「you」の雇用者 (「you」が企業のプログラ
+マとして仕事をしている場合)、あるいは、学校、あるいはその他の組織から、
+当該プログラムに対して「著作権の放棄」を承認する旨の署名を得ておく必要
+があるだろう。GNU GPL の適用方法および GNU GPL に従う方法について、よ
+り詳しくは下記を参照のこと: <http://www.gnu.org/licenses/>。
+
+  You should also get your employer (if you work as a programmer) or school,
+if any, to sign a "copyright disclaimer" for the program, if necessary.
+For more information on this, and how to apply and follow the GNU GPL, see
+<http://www.gnu.org/licenses/>.
+
+  GNU GPL は、「you」のプログラムをプロプライエタリなプログラムに組み
+込む事を許さない。もしも「you」のプログラムがサブルーチンライブラリで
+あるなら、当該ライブラリをプロプライエタリなプログラムにリンクする事を
+許可する事を考えると良いかも知れない。このためには、本ライセンス (this
+License) の代わりに GNU LGPL (GNU Lesser General Public License) を使
+用するとよい。ただし、まず初めに、下記を一読すること:
+<http://www.gnu.org/philosophy/why-not-lgpl.html>。
+
+  The GNU General Public License does not permit incorporating your program
+into proprietary programs.  If your program is a subroutine library, you
+may consider it more useful to permit linking proprietary applications with
+the library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.  But first, please read
+<http://www.gnu.org/philosophy/why-not-lgpl.html>.
